@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+body{
+    background-color: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+}
+i, .container a{
+    color: white;
+    text-decoration: none;
+}
+.limit{
+    width: 92%;
+    margin: auto;
+}
+header{
+    height: 83vh;
+    background-image: url(../img/capa-house.jpg);
+    background-size: cover;
+}
+
+/* NAV TUDO */
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0 15px 0;
+}
+/* NAV ESQUERDA */
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 480px;
+}
+.nav1 img{
+    width: 94px;
+}
+.nav1 nav > a{
+    margin: 0 15px;
+}
+/* NAV DIREITA */
+.nav2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 380px;
+}
+.nav2 img{
+    width: 40px;
+    border-radius: 15px;
+}
+select{
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+/* PRINCIPAL FILME */
+
+.box-first-film{
+    width: 550px;
+    position: relative;
+    top: 100px;
+    color: white;
+}
+.box-first-film h1{
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+.box-first-film div{
+    margin-top: 30px;
+}
+.box-first-film i{
+    padding: 10px 40px;
+    font-style: normal;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bi-caret-right-fill{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.bi-caret-right-fill:hover{
+    background-color: rgba(255, 255, 255, 0.377);
+}
+.bi-exclamation-circle{
+    background-color: #777777;
+    margin-left: 20px;
+}
+.bi-exclamation-circle:hover{
+    background-color: hsla(0, 0%, 47%, 0.377);;
+}
+/* CARROSEL */
+.box-pricipal-carrosel{
+   margin: 0 0 40px 0px;
+}
+.display .owl-dots,.display .owl-nav{
+    display: none;
+}
+
+/* DETALHES DE RESPONSIVIDADE */
+@media (max-width: 900px){
+    .nav2{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: space-between;
+        height: 200px;
+        width: 75px;
+    }
+    .container{
+        align-items: flex-start;
+    }
+    .box-first-film{
+        top: 0;
+        width: 70%;
+    }
+    .owl-item{
+        width: 150px !important;
+    }
+}
+@media(max-width: 600px){
+    .nav1{
+        flex-direction: column;
+        height: 60px;
+    }
+    .box-first-film h1{
+        font-size: 2rem;
+    }
+    .bi-exclamation-circle{
+        display: none;
+    }
+    .owl-item{
+        width: 100px !important;
+    }
+}
+@media(max-width:460px){
+    .nav1 nav{
+        display: none;
+    }
+    .nav2{
+        height: 65px;
+    }
+    .nav2 i, .nav2 a{
+        display: none;
+    }
+}
+
