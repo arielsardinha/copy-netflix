@@ -37,7 +37,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 480px;
+    width: 500px;
 }
 .nav1 img{
     width: 94px;
@@ -124,9 +124,6 @@ select{
         top: 0;
         width: 70%;
     }
-    .owl-item{
-        width: 150px !important;
-    }
 }
 @media(max-width: 600px){
     .nav1{
@@ -138,9 +135,6 @@ select{
     }
     .bi-exclamation-circle{
         display: none;
-    }
-    .owl-item{
-        width: 100px !important;
     }
 }
 @media(max-width:460px){
